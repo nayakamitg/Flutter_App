@@ -1,0 +1,68 @@
+{
+  "info": {
+    "_postman_id": "81c4e732-0d12-45bb-b960-b76e7be350e3",
+    "name": "ZIPNET Missing Persons",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Missing Persons Data",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Cookie",
+            "value": "ASP.NET_SessionId=hc2bbcnz5zmlzp2wuu2qlc1y",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "draw", "value": "1", "type": "text" },
+            { "key": "columns[0][data]", "value": "MissingPersonId", "type": "text" },
+            { "key": "columns[0][name]", "value": "MissingPersonId", "type": "text" },
+            { "key": "columns[0][searchable]", "value": "true", "type": "text" },
+            { "key": "columns[0][orderable]", "value": "true", "type": "text" },
+            { "key": "columns[0][search][value]", "value": "", "type": "text" },
+            { "key": "columns[0][search][regex]", "value": "false", "type": "text" },
+            { "key": "columns[1][data]", "value": "CreatedOn", "type": "text" },
+            { "key": "columns[1][name]", "value": "CreatedOn", "type": "text" },
+            { "key": "columns[1][searchable]", "value": "true", "type": "text" },
+            { "key": "columns[1][orderable]", "value": "true", "type": "text" },
+            { "key": "columns[1][search][value]", "value": "", "type": "text" },
+            { "key": "columns[1][search][regex]", "value": "false", "type": "text" },
+            { "key": "columns[4][data]", "value": "State", "type": "text" },
+            { "key": "columns[4][name]", "value": "State", "type": "text" },
+            { "key": "columns[4][searchable]", "value": "true", "type": "text" },
+            { "key": "columns[4][orderable]", "value": "false", "type": "text" },
+            { "key": "columns[4][search][value]", "value": "", "type": "text" },
+            { "key": "columns[4][search][regex]", "value": "false", "type": "text" },
+            { "key": "order[0][column]", "value": "1", "type": "text" },
+            { "key": "order[0][dir]", "value": "desc", "type": "text" },
+            { "key": "start", "value": "0", "type": "text" },
+            { "key": "length", "value": "100", "type": "text" },
+            { "key": "search[value]", "value": "", "type": "text" },
+            { "key": "search[regex]", "value": "false", "type": "text" },
+            { "key": "searchFormJson", "value": "{}", "type": "text" }
+          ]
+        },
+        "url": {
+          "raw": "https://zipnet.delhipolice.gov.in/Victims/GetMissingPersonsData",
+          "protocol": "https",
+          "host": [
+            "zipnet",
+            "delhipolice",
+            "gov",
+            "in"
+          ],
+          "path": [
+            "Victims",
+            "GetMissingPersonsData"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
